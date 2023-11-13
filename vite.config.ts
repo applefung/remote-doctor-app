@@ -17,7 +17,7 @@ export default defineConfig({
       remotes: {
         // ! localhost
         shared: "http://localhost:5001/assets/shared.js",
-        // container: "http://localhost:5003/assets/container.js",
+        container: "http://localhost:5003/assets/container.js",
         // ! s3
         // shared: 'https://s3.ap-southeast-1.amazonaws.com/remote-app1.com/shared/dist/assets/shared.js',
       },

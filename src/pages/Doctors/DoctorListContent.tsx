@@ -2,7 +2,8 @@ import { Avatar, Box, Button, Typography } from "@mui/material";
 
 import SearchBar from "shared/SearchBar";
 import { increment } from "shared/utils";
-import { increment as incrementRedux } from "shared/reducers";
+import { increment as incrementFromContainer } from "container/reducers";
+// import { increment as incrementRedux } from "shared/reducers";
 import { mockDoctorData } from "../../constants/mock";
 import { useAppSelector } from "shared/hooks";
 import { useDispatch } from "react-redux";
@@ -79,7 +80,7 @@ const DoctorListContent = () => {
           <Typography variant="h3">Share redux</Typography>
           <Button
             onClick={() => {
-              dispatch(incrementRedux());
+              dispatch(incrementFromContainer());
             }}
           >
             Click me to increase the count: {countRedux} .
